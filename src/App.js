@@ -8,7 +8,7 @@ import React from "react";
 import "./App.css";
 // import the PostsPage and SearchBar and add them to the App
 import NavBar from "./components/SearchBar/SearchBarContainer";
-import PostsContainer from "./components/PostsContainer/PostsPage"
+import PostsPage from "./components/PostsContainer/PostsPage"
 import PostHeader from "./components/PostsContainer/PostHeader";
 import LikesSection from "./components/PostsContainer/LikeSection";
 import PostContent from "./components/PostsContainer/Post";
@@ -20,13 +20,13 @@ const App = () => {
   return (
     <div className="App">
       {/* Add imported components here to render them */}
-      <PostsContainer />
-      <PostHeader />
-      <PostContent />
-      <LikesSection />
       <div className="nav">
         <NavBar />
       </div>
+      <PostsPage />
+      {/* <PostHeader /> */}
+      {/* <PostContent /> */}
+      {/* <LikesSection /> */}
     </div>
   );
 };
