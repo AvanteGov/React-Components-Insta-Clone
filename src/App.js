@@ -9,9 +9,8 @@ import "./App.css";
 // import the PostsPage and SearchBar and add them to the App
 import NavBar from "./components/SearchBar/SearchBarContainer";
 import PostsPage from "./components/PostsContainer/PostsPage"
-import PostHeader from "./components/PostsContainer/PostHeader";
-import LikesSection from "./components/PostsContainer/LikeSection";
-import PostContent from "./components/PostsContainer/Post";
+import LikeSection from "./components/PostsContainer/LikeSection";
+
 
 
 
@@ -23,12 +22,15 @@ const App = () => {
       <div className="nav">
         <NavBar />
       </div>
-      <PostsPage />
-      {/* <PostHeader /> */}
-      {/* <PostContent /> */}
-      {/* <LikesSection /> */}
+      <div>
+        <PostsPage />
+        {/* <LikeSection /> */}
+      </div>
     </div>
   );
 };
 
 export default App;
+
+
+

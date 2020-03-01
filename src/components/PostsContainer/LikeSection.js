@@ -13,6 +13,7 @@ const LikeSection = props => {
       className="like-section"
       key="likes-icons-container"
     >
+      {/* add the click event to the div */}
       <div className="like-section-wrapper">
         <i className="far fa-heart" />
       </div>
@@ -20,7 +21,7 @@ const LikeSection = props => {
         <i className="far fa-comment" />
       </div>
     </div>
-    <p className="like-number">likes</p>
+    <p className="like-number">{`${props.likes} likes`}</p>
 </div>
   )
 };
