@@ -9,7 +9,7 @@ import "./App.css";
 // import the PostsPage and SearchBar and add them to the App
 import NavBar from "./components/SearchBar/SearchBarContainer";
 import PostsPage from "./components/PostsContainer/PostsPage"
-import LikeSection from "./components/PostsContainer/LikeSection";
+// import LikeSection from "./components/PostsContainer/LikeSection";
 
 
 
@@ -24,7 +24,6 @@ const App = () => {
       </div>
       <div>
         <PostsPage />
-        {/* <LikeSection /> */}
       </div>
     </div>
   );
